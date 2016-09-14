@@ -1,0 +1,11 @@
+
+---------------using REST, simple receiver------------
+
+curl -k -u admin:admin "https://localhost:8089/services/receivers/simple?index=main&host=ASHads007&source=log&sourcetype=collector_stats" -d "Data we need."
+
+---------------using http collector, token------------
+
+curl -k https://localhost:8088/services/collector -H 'Authorization: Splunk 382BDCA6-B878-4E95-8D7C-4B6554CE21F0 ' -d '{"event": "hello"}'
+
+
+
